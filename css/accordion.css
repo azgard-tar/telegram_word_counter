@@ -1,0 +1,42 @@
+.accordion, .fake-accordion {
+  background-color: #eee;
+  color: #444;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  width: 400px;
+  display: block;
+}
+
+button.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion-border {
+  border: 1px solid;
+}
+
+button.accordion.active:after {
+  content: "\2212";
+}
+
+.accordion {
+  cursor: pointer;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}

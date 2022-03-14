@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Words Rating</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Добро пожаловать</h1>
+  <div class="help_menu">
+    <button class="accordion accordion-border">Где взять файл?</button>
+    <div class="panel">
+      <button class="fake-accordion">Открыть приложение Telegram Desktop</button>
+      <button class="fake-accordion">Выбрать чат</button>
+      <button class="accordion">Открыть меню экспорта</button>
+      <div class="panel">
+        <p>Находиться в правом верхнем углу чата</p>
+        <img class="help_menu_image" src="./img/export_menu.png" alt="">
+      </div>
+      <button class="accordion">Изменить настройки</button>
+      <div class="panel">
+        <img class="help_menu_image" src="./img/export_settings.png" alt="">
+      </div>
+      <button class="fake-accordion">Нажать экспортировать и ожидать</button>
+      <button class="accordion">Найти файл</button>
+      <div class="panel">
+        <p>После завершения экспортирования нажмите эту кнопку и вы перейдёте к размещению файла</p>
+        <img class="help_menu_image" src="./img/export_finish.png" alt="">
+      </div>
+      <button class="fake-accordion">Данный файл нужно выбрать ниже</button>
+    </div>
+  </div>
+  <div class="file-input">
+    <input type="file" id="file" class="file">
+    <label for="file">
+      Выберите файл
+    </label>
+  </div>
+  <div class="chats" id="chats"></div>
+  <div class="wrapper" id="wrapper"></div>
+  <script src="./script.js"></script>
+</body>
+</html>

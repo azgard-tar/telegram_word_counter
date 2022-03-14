@@ -1,0 +1,27 @@
+.chats {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chats_item {
+  display: inline-block;
+  background-color: white;
+  width: 380px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.chats_item_button {
+  background-color: inherit;
+  border: none;
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.chats_item_button:hover {
+  color: #f00;
+}
